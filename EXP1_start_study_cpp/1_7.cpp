@@ -5,13 +5,19 @@
  */
 #include <iostream>
 
-void time(char &hours, char &minutes){
-    
+void str_time(int &hours, int &minutes){
+    std::cout << hours << ":" << minutes << std::endl;
 };
 
 
 int main(int argc, char const *argv[])
 {
-    /* code */
+    int hours;
+    int minutes;
+    std::cout << "Enter the number of hours: ";
+    std::cin >> hours;
+    std::cout << "Enter the number of minutes: ";
+    std::cin >> minutes;
+    str_time(hours, minutes);
     return 0;
 }
